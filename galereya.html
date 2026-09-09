@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bekobod shahri 7-sonli maktab media galereyasi: Maktab binosi, o'quv jarayoni, laboratoriyalar va tadbirlar fotolavhalari.">
+  <title>Media va Fotogalereya | 7-Maktab Bekobod Rasmiy Portali</title>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-gov-bar">
+    <div class="site-container top-gov-inner">
+      <div class="gov-portal-badge">
+        <span class="gov-flag-icon"></span>
+        <span>O'zbekiston Respublikasi Maktabgacha va maktab ta'limi vazirligi tasarrufidagi</span>
+      </div>
+      <div class="top-gov-links">
+        <span class="top-gov-link">
+          <span>Ishonch telefoni:</span>
+          <a href="tel:1006" class="gov-hotline">1006</a>
+        </span>
+        <span class="top-gov-link">
+          <span>Maktab ID: <strong>7-BEK-UZ</strong></span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="header">
+    <div class="site-container header-inner">
+      <a href="index.html" class="brand-box">
+        <div class="emblem-icon">🇺🇿</div>
+        <div class="brand-text">
+          <span class="brand-main">7-Maktab</span>
+          <span class="brand-sub">Bekobod shahri &bull; Davlat portali</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <div class="nav-item">
+          <a href="index.html" class="nav-link">Bosh sahifa</a>
+        </div>
+        <div class="nav-item">
+          <a href="haqida.html" class="nav-link">Maktab haqida</a>
+        </div>
+        <div class="nav-item dropdown">
+          <a href="rahbariyat.html" class="nav-link has-dropdown">
+            <span>Jamoa</span>
+            <span class="nav-chevron">&#9662;</span>
+          </a>
+          <div class="nav-dropdown">
+            <a href="rahbariyat.html" class="dropdown-link">
+              <span>Rahbariyat</span>
+              <span>&rarr;</span>
+            </a>
+            <a href="oqituvchilar.html" class="dropdown-link">
+              <span>O'qituvchilar</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+          <a href="oquvchilar.html" class="nav-link has-dropdown">
+            <span>O'quvchilar</span>
+            <span class="nav-chevron">&#9662;</span>
+          </a>
+          <div class="nav-dropdown">
+            <a href="oquvchilar.html" class="dropdown-link">
+              <span>Iqtidorli o'quvchilar</span>
+              <span>&rarr;</span>
+            </a>
+            <a href="oquvchilar.html#yutuqlar" class="dropdown-link">
+              <span>Yutuqlar</span>
+              <span>&rarr;</span>
+            </a>
+            <a href="oquvchilar.html#tadbirlar" class="dropdown-link">
+              <span>Tadbirlar</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="galereya.html" class="nav-link active">Media</a>
+        </div>
+        <div class="nav-item">
+          <a href="aloqa.html" class="nav-link">Aloqa</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://emaktab.uz" target="_blank" rel="noopener noreferrer" class="btn-emaktab-gov">
+          <span>eMaktab</span>
+          <span>&#8599;</span>
+        </a>
+        <button class="mobile-toggle" id="mobileBurger" aria-label="Menyu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="site-container">
+        <div class="page-breadcrumb">
+          <a href="index.html">Bosh sahifa</a>
+          <span>/</span>
+          <span>Media</span>
+          <span>/</span>
+          <span>Galereya</span>
+        </div>
+        <h1 class="page-title">Media &bull; Maktab Fotogalereyasi</h1>
+        <p class="page-subtitle">Maktab binosi, o'quv xonalari, fan laboratoriyalari va o'quvchilar hayotidan fotoxronika.</p>
+      </div>
+    </section>
+
+    <!-- Filter & Grid -->
+    <section class="site-section">
+      <div class="site-container">
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">Barchasi</button>
+          <button class="filter-btn" data-filter="building">Maktab binosi</button>
+          <button class="filter-btn" data-filter="lessons">O'quv jarayoni</button>
+          <button class="filter-btn" data-filter="lab">Laboratoriya va IT</button>
+          <button class="filter-btn" data-filter="events">Tadbirlar va sport</button>
+        </div>
+
+        <div class="gallery-grid" id="fullGallery">
+          <!-- 1 -->
+          <div class="gallery-card gallery-card-item" data-category="building" data-lightbox>
+            <div class="gallery-img-wrapper">
+              <img src="rasmlar/480328134_122145293906498253_6584458723317994049_n.jpg" alt="Maktab o'quv korpusi">
+            </div>
+            <div class="gallery-meta">
+              <div class="gallery-category-tag">Maktab binosi</div>
+              <div class="gallery-title">Maktab o'quv korpusi va umumiy ko'rinish</div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="gallery-card gallery-card-item" data-category="lessons" data-lightbox>
+            <div class="gallery-img-wrapper">
+              <img src="rasmlar/469616620_122129344532498253_7558529109033581826_n.jpg" alt="Dars jarayoni">
+            </div>
+            <div class="gallery-meta">
+              <div class="gallery-category-tag">O'quv jarayoni</div>
+              <div class="gallery-title">Dars mashg'ulotlari va faol ta'lim jarayoni</div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="gallery-card gallery-card-item" data-category="building" data-lightbox>
+            <div class="gallery-img-wrapper">
+              <img src="rasmlar/475509366_122138280656498253_2559412016377025080_n.jpg" alt="Maktab binosi">
+            </div>
+            <div class="gallery-meta">
+              <div class="gallery-category-tag">Maktab binosi</div>
+              <div class="gallery-title">Maktab hududi va qulay o'quv muhiti</div>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="gallery-card gallery-card-item" data-category="events" data-lightbox>
+            <div class="gallery-img-wrapper">
+              <img src="rasmlar/481079541_122145293990498253_5833707627255759971_n.jpg" alt="Maktab jamoasi tadbiri">
+            </div>
+            <div class="gallery-meta">
+              <div class="gallery-category-tag">Tadbirlar va sport</div>
+              <div class="gallery-title">Maktab jamoasi va ma'naviy-ma'rifiy tadbirlar</div>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="gallery-card gallery-card-item" data-category="events" data-lightbox>
+            <div class="gallery-img-wrapper">
+              <img src="rasmlar/481252569_122145294128498253_6003079283742534132_n.jpg" alt="Bayram uchrashuvi">
+            </div>
+            <div class="gallery-meta">
+              <div class="gallery-category-tag">Tadbirlar va sport</div>
+              <div class="gallery-title">Faxriy mehmonlar va ustozlar bilan uchrashuv</div>
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="gallery-card gallery-card-item" data-category="lessons" data-lightbox>
+            <div class="gallery-img-wrapper">
+              <img src="rasmlar/0832b6d3-07c8-41b1-b92b-61be829a354a.jfif" alt="Sinf mashg'uloti">
+            </div>
+            <div class="gallery-meta">
+              <div class="gallery-category-tag">O'quv jarayoni</div>
+              <div class="gallery-title">Sinfdagi dars jarayoni va o'quvchilar faolligi</div>
+            </div>
+          </div>
+
+          <!-- 7 -->
+          <div class="gallery-card gallery-card-item" data-category="lab" data-lightbox>
+            <div class="gallery-img-wrapper">
+              <img src="rasmlar/3a7cca09-77d1-4b60-add9-1db3f2919be5.jfif" alt="Fan kabineti">
+            </div>
+            <div class="gallery-meta">
+              <div class="gallery-category-tag">Laboratoriya va IT</div>
+              <div class="gallery-title">Fan kabineti va ko'rgazmali amaliy mashg'ulotlar</div>
+            </div>
+          </div>
+
+          <!-- 8 -->
+          <div class="gallery-card gallery-card-item" data-category="building" data-lightbox>
+            <div class="gallery-img-wrapper">
+              <img src="rasmlar/41f7bba3-6402-473a-89d2-4d32f1a3c781.jfif" alt="Maktab infratuzilmasi">
+            </div>
+            <div class="gallery-meta">
+              <div class="gallery-category-tag">Maktab binosi</div>
+              <div class="gallery-title">Maktab yo'laklari va ichki infratuzilma</div>
+            </div>
+          </div>
+
+          <!-- 9 -->
+          <div class="gallery-card gallery-card-item" data-category="events" data-lightbox>
+            <div class="gallery-img-wrapper">
+              <img src="rasmlar/6fd80eac-d804-493b-9750-dabad1cef357 (1).jfif" alt="Tantanali tadbir">
+            </div>
+            <div class="gallery-meta">
+              <div class="gallery-category-tag">Tadbirlar va sport</div>
+              <div class="gallery-title">O'quvchilar ishtirokidagi bayram dasturi</div>
+            </div>
+          </div>
+
+          <!-- 10 -->
+          <div class="gallery-card gallery-card-item" data-category="lessons" data-lightbox>
+            <div class="gallery-img-wrapper">
+              <img src="rasmlar/71b656a8-4ae1-42fa-bf0d-dddbe449a225 (1).jfif" alt="Ustoz va o'quvchi">
+            </div>
+            <div class="gallery-meta">
+              <div class="gallery-category-tag">O'quv jarayoni</div>
+              <div class="gallery-title">Ustoz va shogird: individual mashg'ulotlar</div>
+            </div>
+          </div>
+
+          <!-- 11 -->
+          <div class="gallery-card gallery-card-item" data-category="lab" data-lightbox>
+            <div class="gallery-img-wrapper">
+              <img src="rasmlar/849db08a-d73e-40a9-b685-8e4ced206183.jfif" alt="Sinfxona jihozlari">
+            </div>
+            <div class="gallery-meta">
+              <div class="gallery-category-tag">Laboratoriya va IT</div>
+              <div class="gallery-title">Zamonaviy jihozlangan sinfxona va laboratoriya</div>
+            </div>
+          </div>
+
+          <!-- 12 -->
+          <div class="gallery-card gallery-card-item" data-category="events" data-lightbox>
+            <div class="gallery-img-wrapper">
+              <img src="rasmlar/969297f3-0682-46a4-8297-75b8711a17b5.jfif" alt="Iqtidorli yoshlar tadbiri">
+            </div>
+            <div class="gallery-meta">
+              <div class="gallery-category-tag">Tadbirlar va sport</div>
+              <div class="gallery-title">Maktab faollari va yoshlar tadbirlari</div>
+            </div>
+          </div>
+
+          <!-- 13 -->
+          <div class="gallery-card gallery-card-item" data-category="building" data-lightbox>
+            <div class="gallery-img-wrapper">
+              <img src="rasmlar/d1d2a08f-7a68-42dc-bd52-b6ac50be7d10.jfif" alt="Maktab korpusi">
+            </div>
+            <div class="gallery-meta">
+              <div class="gallery-category-tag">Maktab binosi</div>
+              <div class="gallery-title">Maktab o'quv korpusi va fasad qismi</div>
+            </div>
+          </div>
+
+          <!-- 14 -->
+          <div class="gallery-card gallery-card-item" data-category="lessons" data-lightbox>
+            <div class="gallery-img-wrapper">
+              <img src="rasmlar/d96e0ec9-fcbd-403f-a255-a633ef0b72cb.jfif" alt="Dars jarayoni">
+            </div>
+            <div class="gallery-meta">
+              <div class="gallery-category-tag">O'quv jarayoni</div>
+              <div class="gallery-title">O'quvchilarning darsdagi faol ishtiroki</div>
+            </div>
+          </div>
+
+          <!-- 15 -->
+          <div class="gallery-card gallery-card-item" data-category="lab" data-lightbox>
+            <div class="gallery-img-wrapper">
+              <img src="rasmlar/df538305-02bf-4f80-9b1b-bc3a4df00981.jfif" alt="Amaliy darslar">
+            </div>
+            <div class="gallery-meta">
+              <div class="gallery-category-tag">Laboratoriya va IT</div>
+              <div class="gallery-title">Axborot texnologiyalari va fan xonalarida dars</div>
+            </div>
+          </div>
+
+          <!-- 16 -->
+          <div class="gallery-card gallery-card-item" data-category="events" data-lightbox>
+            <div class="gallery-img-wrapper">
+              <img src="rasmlar/f3310842-7322-439f-8476-df55c9052c04.jfif" alt="Tadbirlar va bayram">
+            </div>
+            <div class="gallery-meta">
+              <div class="gallery-category-tag">Tadbirlar va sport</div>
+              <div class="gallery-title">Maktab bayramlari va ommaviy tadbirlar</div>
+            </div>
+          </div>
+
+          <!-- 17 -->
+          <div class="gallery-card gallery-card-item" data-category="lessons" data-lightbox>
+            <div class="gallery-img-wrapper">
+              <img src="rasmlar/febf405e-1ca6-4b80-9244-60e53fccb799.jfif" alt="Ta'lim jarayoni">
+            </div>
+            <div class="gallery-meta">
+              <div class="gallery-category-tag">O'quv jarayoni</div>
+              <div class="gallery-title">Ta'lim-tarbiya jarayonidan yorqin lavhalar</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-overlay" id="imageLightbox" role="dialog" aria-modal="true">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Yopish">&times;</button>
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+    </div>
+  </div>
+
+  <footer class="gov-footer">
+    <div class="site-container">
+      <div class="footer-bottom-bar" style="border-top: none; padding-top: 0;">
+        <div>&copy; 2026 Bekobod shahri 7-sonli umumiy o'rta ta'lim maktabi.</div>
+        <a href="index.html" style="color: #cbd5e1;">&larr; Bosh sahifaga qaytish</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

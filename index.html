@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bekobod shahri 7-sonli umumiy o'rta ta'lim maktabi rasmiy davlat axborot portali. Maktab haqida ma'lumotlar, rahbariyat, o'qituvchilar, yutuqlar va eMaktab integratsiyasi.">
+  <title>7-Sonli Maktab | Bekobod Shahri Rasmiy Portali</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛️</text></svg>">
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       TOP GOVERNMENT BAR
+       ========================================================================= -->
+  <div class="top-gov-bar">
+    <div class="site-container top-gov-inner">
+      <div class="gov-portal-badge">
+        <span class="gov-flag-icon"></span>
+        <span>O'zbekiston Respublikasi Maktabgacha va maktab ta'limi vazirligi tasarrufidagi</span>
+      </div>
+      <div class="top-gov-links">
+        <span class="top-gov-link">
+          <span>Ishonch telefoni:</span>
+          <a href="tel:1006" class="gov-hotline">1006</a>
+        </span>
+        <span class="top-gov-link">
+          <span>Maktab ID: <strong>7-BEK-UZ</strong></span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       1. NAVBAR
+       Logo | Bosh sahifa | Maktab haqida | Jamoa ▾ | O‘quvchilar ▾ | Media | Aloqa | eMaktab
+       ========================================================================= -->
+  <header class="site-header" id="header">
+    <div class="site-container header-inner">
+      <!-- Logo with Emblem -->
+      <a href="index.html" class="brand-box" aria-label="Bosh sahifa">
+        <div class="emblem-icon">🇺🇿</div>
+        <div class="brand-text">
+          <span class="brand-main">7-Maktab</span>
+          <span class="brand-sub">Bekobod shahri &bull; Davlat portali</span>
+        </div>
+      </a>
+
+      <!-- Grouped Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <div class="nav-item">
+          <a href="index.html" class="nav-link active">Bosh sahifa</a>
+        </div>
+
+        <div class="nav-item">
+          <a href="haqida.html" class="nav-link">Maktab haqida</a>
+        </div>
+
+        <!-- Jamoa Dropdown -->
+        <div class="nav-item dropdown">
+          <a href="rahbariyat.html" class="nav-link has-dropdown">
+            <span>Jamoa</span>
+            <span class="nav-chevron">&#9662;</span>
+          </a>
+          <div class="nav-dropdown">
+            <a href="rahbariyat.html" class="dropdown-link">
+              <span>Rahbariyat</span>
+              <span>&rarr;</span>
+            </a>
+            <a href="oqituvchilar.html" class="dropdown-link">
+              <span>O'qituvchilar</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- O'quvchilar Dropdown -->
+        <div class="nav-item dropdown">
+          <a href="oquvchilar.html" class="nav-link has-dropdown">
+            <span>O'quvchilar</span>
+            <span class="nav-chevron">&#9662;</span>
+          </a>
+          <div class="nav-dropdown">
+            <a href="oquvchilar.html" class="dropdown-link">
+              <span>Iqtidorli o'quvchilar</span>
+              <span>&rarr;</span>
+            </a>
+            <a href="oquvchilar.html#yutuqlar" class="dropdown-link">
+              <span>Yutuqlar</span>
+              <span>&rarr;</span>
+            </a>
+            <a href="oquvchilar.html#tadbirlar" class="dropdown-link">
+              <span>Tadbirlar</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Media -->
+        <div class="nav-item">
+          <a href="galereya.html" class="nav-link">Media</a>
+        </div>
+
+        <!-- Aloqa -->
+        <div class="nav-item">
+          <a href="aloqa.html" class="nav-link">Aloqa</a>
+        </div>
+      </nav>
+
+      <!-- Right Action: eMaktab Button & Mobile Hamburger -->
+      <div class="header-actions">
+        <a href="https://emaktab.uz" target="_blank" rel="noopener noreferrer" class="btn-emaktab-gov" title="Rasmiy eMaktab elektron kundalik tizimi">
+          <span>eMaktab</span>
+          <span>&#8599;</span>
+        </a>
+
+        <button class="mobile-toggle" id="mobileBurger" aria-label="Menyuni ochish" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         2. HERO SECTION
+         Maktab nomi | Qisqa ta’rif | Maktab binosi yoki o‘quvchilar rasmi
+         ========================================================================= -->
+    <section class="gov-hero" id="hero">
+      <div class="site-container">
+        <div class="gov-hero-grid">
+          <div class="gov-hero-text">
+            <div class="gov-hero-badge">
+              <span class="circle-marker"></span>
+              <span>Umumiy o'rta ta'lim davlat muassasasi</span>
+            </div>
+
+            <h1 class="gov-hero-title">
+              Bekobod shahri <br>
+              <span>7-sonli maktab</span> rasmiy portali
+            </h1>
+
+            <p class="gov-hero-lead">
+              Zamonaviy davlat ta'lim standartlari, chuqur intellektual tayyorgarlik va milliy qadriyatlarga tayangan akademik ta'lim muhiti.
+            </p>
+
+            <div class="gov-hero-actions">
+              <a href="haqida.html" class="btn-gov-primary">
+                <span>Maktab pasporti va tarixi</span>
+                <span>&rarr;</span>
+              </a>
+              <a href="aloqa.html" class="btn-gov-secondary">
+                <span>Fuqarolarni qabul qilish</span>
+                <span>&#128197;</span>
+              </a>
+            </div>
+
+            <div class="hero-quick-stats">
+              <div class="quick-stat-item">
+                <span class="quick-stat-num">1,240+</span>
+                <span class="quick-stat-label">Ta'lim oluvchilar</span>
+              </div>
+              <div class="quick-stat-item">
+                <span class="quick-stat-num">84 nafar</span>
+                <span class="quick-stat-label">Toifali pedagoglar</span>
+              </div>
+              <div class="quick-stat-item">
+                <span class="quick-stat-num">94%</span>
+                <span class="quick-stat-label">OTMga kirish</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Image Panel -->
+          <div class="hero-photo-panel">
+            <img 
+              src="rasmlar/480328134_122145293906498253_6584458723317994049_n.jpg" 
+              alt="Bekobod 7-maktab o'quv jarayoni va jamoasi"
+              loading="eager"
+            >
+            <div class="hero-photo-caption">
+              Bekobod shahri 7-sonli umumiy o'rta ta'lim maktabi
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. MAKTAB HAQIDA
+         Qisqa ma’lumot | Maktab tarixi | Asosiy statistikalar
+         ========================================================================= -->
+    <section class="site-section" id="about-summary">
+      <div class="site-container">
+        <!-- Statistikalar Grid -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">1978</div>
+            <div class="stat-label">Tashkil topgan yili</div>
+            <p class="stat-desc">48 yillik shonli akademik meros va uzluksiz pedagogik an'ana.</p>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Davlat akkreditatsiyasi</div>
+            <p class="stat-desc">Barcha ta'lim dasturlari to'liq davlat litsenziyasiga ega.</p>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number">42+</div>
+            <div class="stat-label">Fan olimpiadasi g'oliblari</div>
+            <p class="stat-desc">So'nggi o'quv yilida shahar va viloyat miqyosida egallangan sovrinlar.</p>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number">4 ta</div>
+            <div class="stat-label">Zamonaviy laboratoriya</div>
+            <p class="stat-desc">Fizika, kimyo, biologiya va axborot texnologiyalari markazlari.</p>
+          </div>
+        </div>
+
+        <!-- Overview & Hujjatlar -->
+        <div class="about-overview-grid">
+          <div class="about-text-col">
+            <span class="section-tag">Muassasa faoliyati</span>
+            <h2 class="section-title">Ta'lim sifatini ta'minlash — davlat siyosatining ustuvor yo'nalishi</h2>
+            <p class="about-text-lead">
+              7-maktab Bekobod shahrining yetakchi umumta'lim muassasalaridan biri bo'lib, o'quvchilarga chuqurlashtirilgan bilim berish va ularni davlat oliy ta'lim muassasalariga maqsadli yo'naltirishga xizmat qiladi.
+            </p>
+            <p class="about-text-body">
+              Maktabimizda o'quv jarayoni ilg'or pedagogik texnologiyalar, elektron darsliklar va zamonaviy amaliyot asosida tashkil etilgan. Pedagogik jamoamiz malakali, oliy toifali mutaxassislar hamda xalq ta'limi a'lochilaridan iborat.
+            </p>
+            <div style="margin-top: 0.5rem;">
+              <a href="haqida.html" class="btn-gov-primary">
+                <span>Maktab tarixi va pasporti bilan to'liq tanishish</span>
+                <span>&rarr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Me'yoriy-huquqiy hujjatlar -->
+          <div class="about-documents-col">
+            <h3 class="doc-box-title">
+              <span>📄</span>
+              <span>Rasmiy hujjatlar va nizomlar</span>
+            </h3>
+            <div class="doc-list">
+              <a href="haqida.html#nizom" class="doc-item">
+                <span>Maktab ustavi va davlat nizomi</span>
+                <span class="doc-icon">&#128196;</span>
+              </a>
+              <a href="haqida.html#pasport" class="doc-item">
+                <span>Muassasa rasmiy pasporti (2025/2026)</span>
+                <span class="doc-icon">&#128196;</span>
+              </a>
+              <a href="haqida.html#litsenziya" class="doc-item">
+                <span>Davlat ta'lim akkreditatsiyasi guvohnomasi</span>
+                <span class="doc-icon">&#128196;</span>
+              </a>
+              <a href="haqida.html#odob-axloq" class="doc-item">
+                <span>O'quvchilarning ichki tartib-qoidalari</span>
+                <span class="doc-icon">&#128196;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. RAHBARIYAT SECTION
+         Direktor | Direktor o‘rinbosarlari
+         ========================================================================= -->
+    <section class="site-section bg-subtle border-top" id="leadership">
+      <div class="site-container">
+        <div class="section-header">
+          <span class="section-tag">Ma'muriyat</span>
+          <h2 class="section-title">Maktab rahbariyati</h2>
+          <p class="section-desc">Fuqarolar bilan ochiq muloqot va shaffof boshqaruv tizimi asosida faoliyat yuritiladi.</p>
+        </div>
+
+        <div class="leadership-grid">
+          <!-- Direktor -->
+          <div class="leader-card director-feature">
+            <div class="leader-photo-box">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=700&q=80" alt="Maktab direktori Rustam Ergashev">
+              <span class="leader-role-badge">Maktab direktori</span>
+            </div>
+            <div class="leader-body">
+              <h3 class="leader-name">Ergashev Rustam Olimovich</h3>
+              <div class="leader-qualification">Oliy toifali pedagog &bull; Xalq ta'limi a'lochisi</div>
+              
+              <div class="leader-details-table">
+                <div class="detail-row">
+                  <span>Qabul kunlari:</span>
+                  <strong>Dushanba, Chorshanba (14:00 - 17:00)</strong>
+                </div>
+                <div class="detail-row">
+                  <span>Xizmat telefoni:</span>
+                  <strong>+998 (70) 912-34-56</strong>
+                </div>
+                <div class="detail-row">
+                  <span>Xona:</span>
+                  <strong>Bosh bino, 101-xona</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- O'quv ishlari bo'yicha o'rinbosar -->
+          <div class="leader-card">
+            <div class="leader-photo-box">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=700&q=80" alt="O'quv ishlari bo'yicha o'rinbosar">
+              <span class="leader-role-badge">O'quv ishlari bo'yicha o'rinbosar</span>
+            </div>
+            <div class="leader-body">
+              <h3 class="leader-name">Xoliqova Dilorom Baxtiyorovna</h3>
+              <div class="leader-qualification">Oliy toifali metodist &bull; 19 yillik staj</div>
+
+              <div class="leader-details-table">
+                <div class="detail-row">
+                  <span>Qabul kunlari:</span>
+                  <strong>Seshanba, Payshanba (10:00 - 13:00)</strong>
+                </div>
+                <div class="detail-row">
+                  <span>Xizmat telefoni:</span>
+                  <strong>+998 (70) 912-34-57</strong>
+                </div>
+                <div class="detail-row">
+                  <span>Xona:</span>
+                  <strong>Bosh bino, 104-xona</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ma'naviy-ma'rifiy ishlar bo'yicha o'rinbosar -->
+          <div class="leader-card">
+            <div class="leader-photo-box">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=700&q=80" alt="Ma'naviy-ma'rifiy ishlar bo'yicha o'rinbosar">
+              <span class="leader-role-badge">Ma'naviy-ma'rifiy ishlar bo'yicha o'rinbosar</span>
+            </div>
+            <div class="leader-body">
+              <h3 class="leader-name">Mahmudov Jasur Shuhratovich</h3>
+              <div class="leader-qualification">Bosh o'qituvchi &bull; 14 yillik staj</div>
+
+              <div class="leader-details-table">
+                <div class="detail-row">
+                  <span>Qabul kunlari:</span>
+                  <strong>Juma, Shanba (09:00 - 12:00)</strong>
+                </div>
+                <div class="detail-row">
+                  <span>Xizmat telefoni:</span>
+                  <strong>+998 (70) 912-34-58</strong>
+                </div>
+                <div class="detail-row">
+                  <span>Xona:</span>
+                  <strong>Bosh bino, 108-xona</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+          <a href="rahbariyat.html" class="btn-gov-secondary">
+            <span>Barcha o'rinbosarlar va qabul jadvali bilan tanishish</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. IQTIDORLI O‘QUVCHILAR SECTION
+         6–8 ta o‘quvchi | Rasm | F.I.Sh. | Sinfi | Yo‘nalishi | Asosiy yutug‘i
+         ========================================================================= -->
+    <section class="site-section border-top" id="gifted-students">
+      <div class="site-container">
+        <div class="section-header">
+          <span class="section-tag">Iqtidorli yoshlar</span>
+          <h2 class="section-title">O'quvchilarimiz — maktabimiz faxri</h2>
+          <p class="section-desc">Fan olimpiadalari, IT tanlovlari, til sertifikatlari va sport bellashuvlarida yuqori natija qayd etgan yoshlar.</p>
+        </div>
+
+        <div class="students-grid">
+          <!-- 1 -->
+          <div class="student-card">
+            <div class="student-photo-wrapper">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Kamola Rashidova" loading="lazy">
+              <span class="student-grade-pill">11-A sinf</span>
+            </div>
+            <div class="student-info">
+              <h3 class="student-name">Kamola Rashidova</h3>
+              <div class="student-field">Aniq fanlar (Matematika)</div>
+              <p class="student-achievement">Respublika fan olimpiadasi kumush medali sohibasi, SAT 1480 ball.</p>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="student-card">
+            <div class="student-photo-wrapper">
+              <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=600&q=80" alt="Javohir To'xtasinov" loading="lazy">
+              <span class="student-grade-pill">10-B sinf</span>
+            </div>
+            <div class="student-info">
+              <h3 class="student-name">Javohir To'xtasinov</h3>
+              <div class="student-field">Axborot texnologiyalari</div>
+              <p class="student-achievement">Toshkent viloyati "Yosh dasturchi" tanlovi 1-o'rin g'olibi.</p>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="student-card">
+            <div class="student-photo-wrapper">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80" alt="Madina Saidova" loading="lazy">
+              <span class="student-grade-pill">11-B sinf</span>
+            </div>
+            <div class="student-info">
+              <h3 class="student-name">Madina Saidova</h3>
+              <div class="student-field">Xorijiy tillar (Ingliz tili)</div>
+              <p class="student-achievement">IELTS 8.0 xalqaro sertifikat sohibasi, milliy insholar tanlovi g'olibi.</p>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="student-card">
+            <div class="student-photo-wrapper">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Azizbek Qodirov" loading="lazy">
+              <span class="student-grade-pill">9-A sinf</span>
+            </div>
+            <div class="student-info">
+              <h3 class="student-name">Azizbek Qodirov</h3>
+              <div class="student-field">Tabiiy fanlar (Fizika)</div>
+              <p class="student-achievement">Bekobod shahar fizika olimpiadasi 1-o'rin sohibi.</p>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="student-card">
+            <div class="student-photo-wrapper">
+              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80" alt="Zarina Karimova" loading="lazy">
+              <span class="student-grade-pill">10-A sinf</span>
+            </div>
+            <div class="student-info">
+              <h3 class="student-name">Zarina Karimova</h3>
+              <div class="student-field">Ona tili va adabiyot</div>
+              <p class="student-achievement">"Yosh kitobxon" shahar bosqichi mutlaq g'olibi.</p>
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="student-card">
+            <div class="student-photo-wrapper">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" alt="Bekzod Aliyev" loading="lazy">
+              <span class="student-grade-pill">11-A sinf</span>
+            </div>
+            <div class="student-info">
+              <h3 class="student-name">Bekzod Aliyev</h3>
+              <div class="student-field">Sport (Shaxmat)</div>
+              <p class="student-achievement">Toshkent viloyati shaxmat chempionati oltin medali sohibi (CMS).</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 2.5rem; text-align: center;">
+          <a href="oquvchilar.html" class="btn-gov-secondary">
+            <span>Barcha iqtidorli o'quvchilar ro'yxati</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. YUTUQLAR SECTION
+         O‘quvchilar yutuqlari | O‘qituvchilar yutuqlari | Olimpiada, tanlov va sport
+         ========================================================================= -->
+    <section class="site-section bg-subtle border-top" id="achievements">
+      <div class="site-container">
+        <div class="section-header">
+          <span class="section-tag">Natijadorlik</span>
+          <h2 class="section-title">Yutuqlar va rasmiy ko'rsatkichlar</h2>
+          <p class="section-desc">Ta'lim sifati va pedagogik salohiyatning rasmiy natijalari.</p>
+        </div>
+
+        <div class="achievements-tabs-grid">
+          <!-- O'quvchilar yutuqlari -->
+          <div class="achievement-block">
+            <div class="achieve-icon">🎓</div>
+            <h3 class="achieve-category-title">O'quvchilar yutuqlari</h3>
+            <div class="achieve-bullets-list">
+              <div class="achieve-bullet-item">
+                <span class="achieve-check">&#10003;</span>
+                <span>Bitiruvchilarning 94 foizi oliy o'quv yurtlariga davlat granti va to'lov-shartnoma asosida qabul qilindi.</span>
+              </div>
+              <div class="achieve-bullet-item">
+                <span class="achieve-check">&#10003;</span>
+                <span>35 nafardan ortiq o'quvchi xalqaro til bilish (IELTS, CEFR) sertifikatlariga ega bo'ldi.</span>
+              </div>
+              <div class="achieve-bullet-item">
+                <span class="achieve-check">&#10003;</span>
+                <span>Prezident ta'lim dasturlari bo'yicha IT stipendiyalari sohiblari yetishib chiqdi.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- O'qituvchilar yutuqlari -->
+          <div class="achievement-block teacher-achieve">
+            <div class="achieve-icon">📚</div>
+            <h3 class="achieve-category-title">O'qituvchilar yutuqlari</h3>
+            <div class="achieve-bullets-list">
+              <div class="achieve-bullet-item">
+                <span class="achieve-check">&#10003;</span>
+                <span>3 nafar pedagogimiz "Xalq ta'limi a'lochisi" ko'krak nishoni bilan taqdirlandi.</span>
+              </div>
+              <div class="achieve-bullet-item">
+                <span class="achieve-check">&#10003;</span>
+                <span>"Yilning eng yaxshi fan o'qituvchisi" shahar ko'rik-tanlovida matematika va ingliz tili ustozlari 1-o'rinni egalladi.</span>
+              </div>
+              <div class="achieve-bullet-item">
+                <span class="achieve-check">&#10003;</span>
+                <span>Pedagoglarimizning 12 dan ortiq metodik qo'llanmalari Respublika miqyosida nashr etildi.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Olimpiada, tanlov va sport -->
+          <div class="achievement-block olympiad-achieve">
+            <div class="achieve-icon">🏆</div>
+            <h3 class="achieve-category-title">Olimpiada va sport</h3>
+            <div class="achieve-bullets-list">
+              <div class="achieve-bullet-item">
+                <span class="achieve-check">&#10003;</span>
+                <span>Asosiy fan olimpiadalarining shahar bosqichida 42 ta sovrinli o'rin olindi.</span>
+              </div>
+              <div class="achieve-bullet-item">
+                <span class="achieve-check">&#10003;</span>
+                <span>Maktab mini-futbol jamoasi Toshkent viloyati "Umid nihollari" spartakiadasida 2-o'rinni egalladi.</span>
+              </div>
+              <div class="achieve-bullet-item">
+                <span class="achieve-check">&#10003;</span>
+                <span>Shaxmat bo'yicha viloyat terma jamoasiga 2 nafar o'quvchimiz qabul qilindi.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. GALEREYA (MEDIA) SECTION
+         Maktab hayotidan rasmlar | Tadbirlar | O‘quv jarayoni | Maktab binosi
+         ========================================================================= -->
+    <section class="site-section border-top" id="gallery-preview">
+      <div class="site-container">
+        <div class="section-header">
+          <span class="section-tag">Fotoxronika</span>
+          <h2 class="section-title">Media &bull; Maktab hayoti</h2>
+          <p class="section-desc">Ta'lim jarayonlari, moddiy-texnik baza, bayramlar va o'quvchilar hayotidan fotolavhalar.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- 1. Maktab binosi -->
+          <div class="gallery-card" data-lightbox>
+            <div class="gallery-img-wrapper">
+              <img src="rasmlar/469616620_122129344532498253_7558529109033581826_n.jpg" alt="Maktab faoliyati">
+            </div>
+            <div class="gallery-meta">
+              <div class="gallery-category-tag">Maktab hayoti</div>
+              <div class="gallery-title">O'quv jarayoni va dars mashg'ulotlari</div>
+            </div>
+          </div>
+
+          <!-- 2. Tadbirlar -->
+          <div class="gallery-card" data-lightbox>
+            <div class="gallery-img-wrapper">
+              <img src="rasmlar/481079541_122145293990498253_5833707627255759971_n.jpg" alt="Maktab jamoasi">
+            </div>
+            <div class="gallery-meta">
+              <div class="gallery-category-tag">Tadbirlar</div>
+              <div class="gallery-title">Ustozlar va o'quvchilar ma'naviy tadbiri</div>
+            </div>
+          </div>
+
+          <!-- 3. Bayram tadbiri -->
+          <div class="gallery-card" data-lightbox>
+            <div class="gallery-img-wrapper">
+              <img src="rasmlar/481252569_122145294128498253_6003079283742534132_n.jpg" alt="Tadbir va faxriylar">
+            </div>
+            <div class="gallery-meta">
+              <div class="gallery-category-tag">Uchrashuvlar</div>
+              <div class="gallery-title">Faxriy mehmonlar bilan uchrashuv kechasi</div>
+            </div>
+          </div>
+
+          <!-- 4. O'quv jarayoni -->
+          <div class="gallery-card" data-lightbox>
+            <div class="gallery-img-wrapper">
+              <img src="rasmlar/0832b6d3-07c8-41b1-b92b-61be829a354a.jfif" alt="Sinf mashg'uloti">
+            </div>
+            <div class="gallery-meta">
+              <div class="gallery-category-tag">O'quv jarayoni</div>
+              <div class="gallery-title">Sinfdagi interaktiv dars jarayonlari</div>
+            </div>
+          </div>
+
+          <!-- 5. Fan xonasi -->
+          <div class="gallery-card" data-lightbox>
+            <div class="gallery-img-wrapper">
+              <img src="rasmlar/3a7cca09-77d1-4b60-add9-1db3f2919be5.jfif" alt="Fan xonasi">
+            </div>
+            <div class="gallery-meta">
+              <div class="gallery-category-tag">Amaliyot</div>
+              <div class="gallery-title">O'quv xonalari va jihozlar bilan tanishuv</div>
+            </div>
+          </div>
+
+          <!-- 6. Maktab binosi -->
+          <div class="gallery-card" data-lightbox>
+            <div class="gallery-img-wrapper">
+              <img src="rasmlar/41f7bba3-6402-473a-89d2-4d32f1a3c781.jfif" alt="Maktab infratuzilmasi">
+            </div>
+            <div class="gallery-meta">
+              <div class="gallery-category-tag">Maktab binosi</div>
+              <div class="gallery-title">Maktab zallari va o'quv koridori</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center;">
+          <a href="galereya.html" class="btn-gov-primary">
+            <span>Barcha fotogalereyani ko'rish</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         8. ALOQA SECTION
+         Manzil | Telefon | Email | Xarita | Ijtimoiy tarmoqlar
+         ========================================================================= -->
+    <section class="site-section bg-subtle border-top" id="contact">
+      <div class="site-container">
+        <div class="section-header">
+          <span class="section-tag">Bog'lanish</span>
+          <h2 class="section-title">Aloqa va murojaatlar</h2>
+          <p class="section-desc">Fuqarolar murojaatlari qonun doirasida ko'rib chiqiladi.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Chap taraf: Aloqa ma'lumotlari -->
+          <div class="contact-info-card">
+            <!-- Manzil -->
+            <div class="contact-entry">
+              <div class="contact-entry-icon">📍</div>
+              <div>
+                <div class="contact-entry-label">Rasmiy manzil</div>
+                <div class="contact-entry-val">Toshkent viloyati, Bekobod shahri, Do'stlik MFY, 7-sonli maktab</div>
+              </div>
+            </div>
+
+            <!-- Telefon -->
+            <div class="contact-entry">
+              <div class="contact-entry-icon">📞</div>
+              <div>
+                <div class="contact-entry-label">Qabulxona telefoni</div>
+                <div class="contact-entry-val">
+                  <a href="tel:+998709123456">+998 (70) 912-34-56</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-entry">
+              <div class="contact-entry-icon">✉️</div>
+              <div>
+                <div class="contact-entry-label">Elektron pochta</div>
+                <div class="contact-entry-val">
+                  <a href="mailto:bekobod7maktab@xtv.uz">bekobod7maktab@xtv.uz</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ijtimoiy tarmoqlar -->
+            <div class="contact-entry">
+              <div class="contact-entry-icon">🌐</div>
+              <div>
+                <div class="contact-entry-label">Rasmiy axborot kanallari</div>
+                <div style="display: flex; gap: 0.5rem; margin-top: 0.4rem; flex-wrap: wrap;">
+                  <a href="https://t.me" target="_blank" rel="noopener noreferrer" class="badge-verified">Telegram &nearr;</a>
+                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="badge-verified">Facebook &nearr;</a>
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="badge-verified">Instagram &nearr;</a>
+                  <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="badge-verified">YouTube &nearr;</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Xarita Embed -->
+            <div class="gov-map-box">
+              <iframe 
+                title="Bekobod 7-maktab xaritadagi aniq joylashuvi"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d944.9587992587831!2d69.25390975265968!3d40.22954232895962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b1964361555555%3A0x6b8908aa145063c1!2z0YjQutC-0LvQsCDihJY3!5e1!3m2!1sru!2s!4v1788788352293!5m2!1sru!2s" 
+                style="border:0; width:100%; height:100%;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="strict-origin-when-cross-origin">
+              </iframe>
+            </div>
+            <div style="margin-top: 0.65rem;">
+              <a href="https://maps.app.goo.gl/9inDaNUuJcLVV1Ww6" target="_blank" rel="noopener noreferrer" class="badge-verified" style="display: inline-flex;">
+                <span>📍 Google Maps xaritasida ochish</span>
+                <span>&nearr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- O'ng taraf: Elektron murojaat yuborish formasi -->
+          <div class="contact-form-card">
+            <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700; color: var(--color-gov-blue); margin-bottom: 0.5rem;">
+              Fuqarolar uchun elektron murojaat
+            </h3>
+            <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 1.5rem;">
+              "Jismoniy va yuridik shaxslarning murojaatlari to'g'risida"gi O'zbekiston Respublikasi Qonuniga muvofiq murojaatlar 15 kun ichida ko'rib chiqiladi.
+            </p>
+
+            <form id="contactForm">
+              <div class="gov-form-group">
+                <label for="govFullName" class="gov-form-label">F.I.Sh. (To'liq ismingiz)</label>
+                <input type="text" id="govFullName" class="gov-form-input" placeholder="Masalan: Karim Alimov Shuhratovich" required>
+              </div>
+
+              <div class="gov-form-group">
+                <label for="govPhone" class="gov-form-label">Telefon raqamingiz</label>
+                <input type="tel" id="govPhone" class="gov-form-input" placeholder="+998 (__) ___-__-__" required>
+              </div>
+
+              <div class="gov-form-group">
+                <label for="govTopic" class="gov-form-label">Murojaat yo'nalishi</label>
+                <select id="govTopic" class="gov-form-input" style="background-color: #fff;">
+                  <option value="admission">Maktabga qabul masalasi</option>
+                  <option value="education">O'quv jarayoni va dars jadvali</option>
+                  <option value="suggestion">Taklif va tashabbuslar</option>
+                  <option value="other">Boshqa masalalar</option>
+                </select>
+              </div>
+
+              <div class="gov-form-group">
+                <label for="govMessage" class="gov-form-label">Murojaat matni</label>
+                <textarea id="govMessage" class="gov-form-textarea" placeholder="Murojaat mazmunini bayon eting..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-gov-primary" style="width: 100%; justify-content: center; margin-top: 0.5rem;">
+                <span>Murojaatni yuborish</span>
+                <span>&rarr;</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER (INSTITUTIONAL)
+       ========================================================================= -->
+  <footer class="gov-footer">
+    <div class="site-container">
+      <div class="footer-main-grid">
+        <!-- Col 1: Brand & Info -->
+        <div>
+          <div class="footer-brand-title">Bekobod 7-Maktab Rasmiy Portali</div>
+          <p class="footer-brand-desc">
+            Toshkent viloyati Bekobod shahri 7-sonli umumiy o'rta ta'lim maktabining rasmiy axborot manbasi. Barcha ma'lumotlar davlat ta'lim standartlariga muvofiq joylashtirilgan.
+          </p>
+          <div style="display: flex; gap: 0.5rem;">
+            <span class="badge-verified" style="background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.2);">
+              Davlat reestri: #7-BEK
+            </span>
+          </div>
+        </div>
+
+        <!-- Col 2: Sahifalar -->
+        <div>
+          <div class="footer-heading">Sahifalar</div>
+          <div class="footer-nav-list">
+            <a href="index.html">Bosh sahifa</a>
+            <a href="haqida.html">Maktab haqida</a>
+            <a href="rahbariyat.html">Rahbariyat</a>
+            <a href="oqituvchilar.html">O'qituvchilar</a>
+            <a href="oquvchilar.html">Iqtidorli o'quvchilar</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Media & Hujjatlar -->
+        <div>
+          <div class="footer-heading">Media va Hujjatlar</div>
+          <div class="footer-nav-list">
+            <a href="galereya.html">Fotogalereya</a>
+            <a href="haqida.html#nizom">Maktab nizomi</a>
+            <a href="oquvchilar.html#yutuqlar">Yutuqlarimiz</a>
+            <a href="aloqa.html">Fuqarolar qabuli</a>
+            <a href="https://emaktab.uz" target="_blank" rel="noopener noreferrer">eMaktab elektron tizimi &nearr;</a>
+          </div>
+        </div>
+
+        <!-- Col 4: Qabulxona & Aloqa -->
+        <div>
+          <div class="footer-heading">Qabulxona</div>
+          <div class="footer-nav-list">
+            <span style="font-size: 0.875rem; color: #94a3b8;">Manzil: Bekobod shahri, Do'stlik MFY</span>
+            <a href="tel:+998709123456">Tel: +998 (70) 912-34-56</a>
+            <a href="mailto:bekobod7maktab@xtv.uz">bekobod7maktab@xtv.uz</a>
+            <span style="font-size: 0.8125rem; color: #10b981; margin-top: 0.5rem;">Ish tartibi: Dush - Shanba, 08:00 - 18:00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 Bekobod shahri 7-sonli umumiy o'rta ta'lim maktabi. Barcha huquqlar qonun bilan himoyalangan.</div>
+        <div>Rasmiy davlat axborot resursi.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-overlay" id="imageLightbox" role="dialog" aria-modal="true">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Yopish">&times;</button>
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+    </div>
+  </div>
+
+  <!-- Toast Notice on Form Submit -->
+  <div class="toast-notice" id="toastNotice" role="status">
+    Murojaatingiz ro'yxatga olindi. Tez orada siz bilan bog'lanamiz.
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

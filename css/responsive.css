@@ -1,0 +1,195 @@
+﻿/* ==========================================================================
+   7-Maktab RASMIY PORTALI | RESPONSIVE STYLES
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .gov-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .leadership-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .students-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .achievements-tabs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-main-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 860px) {
+  .top-gov-inner {
+    flex-direction: column;
+    gap: 0.35rem;
+    align-items: flex-start;
+  }
+
+  .top-gov-links {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .site-header {
+    height: auto;
+  }
+
+  .header-inner {
+    height: 70px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 106px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 106px);
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1.5rem;
+    gap: 1rem;
+    border-top: 1px solid var(--color-border);
+    transform: translateX(-100%);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 999;
+    overflow-y: auto;
+  }
+
+  .nav-menu.open {
+    transform: translateX(0);
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 1.05rem;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .nav-dropdown {
+    position: static;
+    box-shadow: none;
+    border: none;
+    border-left: 3px solid var(--color-gov-blue);
+    padding: 0.5rem 0 0.5rem 1rem;
+    background-color: var(--color-bg-subtle);
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    display: none;
+  }
+
+  .nav-dropdown.show {
+    display: block;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .mobile-toggle.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .mobile-toggle.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-toggle.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .about-overview-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1.75rem;
+  }
+
+  .about-documents-col {
+    border-left: none;
+    border-top: 1px solid var(--color-border);
+    padding-left: 0;
+    padding-top: 1.5rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-section {
+    padding: 3.5rem 0;
+  }
+
+  .site-container {
+    padding: 0 1.25rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leadership-grid,
+  .students-grid,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gov-hero-title {
+    font-size: 1.95rem;
+  }
+
+  .gov-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-gov-primary,
+  .btn-gov-secondary {
+    justify-content: center;
+  }
+
+  .hero-quick-stats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .footer-main-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
+
+  .contact-info-card,
+  .contact-form-card {
+    padding: 1.5rem;
+  }
+}
