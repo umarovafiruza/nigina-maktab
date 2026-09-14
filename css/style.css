@@ -47,6 +47,7 @@
   --shadow-hover: 0 10px 20px -3px rgba(15, 23, 42, 0.08);
 
   --transition: all 0.2s ease-in-out;
+  --header-height: 76px;
 }
 
 /* --------------------------------------------------------------------------
@@ -238,6 +239,7 @@ ul, ol {
   top: 0;
   left: 0;
   width: 100%;
+  height: var(--header-height, 76px);
   background-color: #ffffff;
   border-bottom: 2px solid var(--color-gov-blue-subtle);
   box-shadow: var(--shadow-sm);
@@ -248,7 +250,7 @@ ul, ol {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 76px;
+  height: 100%;
 }
 
 /* Institutional Logo */
@@ -412,21 +414,33 @@ ul, ol {
   display: none;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 5px;
-  width: 36px;
-  height: 36px;
-  background: none;
+  width: 40px;
+  height: 40px;
+  background: transparent;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
-  padding: 6px;
+  padding: 8px;
+  cursor: pointer;
+  transition: var(--transition);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .mobile-toggle span {
   display: block;
-  width: 100%;
+  width: 22px;
   height: 2px;
   background-color: var(--color-gov-blue);
-  transition: var(--transition);
+  border-radius: 2px;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.2s ease,
+              background-color 0.2s ease;
+  transform-origin: center;
+}
+
+.nav-backdrop {
+  display: none;
 }
 
 /* --------------------------------------------------------------------------

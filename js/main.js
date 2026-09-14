@@ -1,4 +1,4 @@
-﻿/**
+/**
  * 7-Maktab | Minimalist Interactive Scripts
  * Sokin, toza va engil JavaScript
  */
@@ -14,27 +14,96 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 2. Mobile burger toggle
+  // 2. Mobile Menu & Burger Toggle System
   const mobileBurger = document.getElementById('mobileBurger');
   const navMenu = document.getElementById('navMenu');
 
+  // Create or retrieve backdrop overlay
+  let navBackdrop = document.querySelector('.nav-backdrop');
+  if (!navBackdrop) {
+    navBackdrop = document.createElement('div');
+    navBackdrop.className = 'nav-backdrop';
+    document.body.appendChild(navBackdrop);
+  }
+
+  // Add mobile menu footer (eMaktab and quick contact) if not present
+  if (navMenu && !navMenu.querySelector('.mobile-menu-footer')) {
+    const mobileFooter = document.createElement('div');
+    mobileFooter.className = 'mobile-menu-footer';
+    mobileFooter.innerHTML = `
+      <a href="https://emaktab.uz" target="_blank" rel="noopener noreferrer" class="btn-emaktab-full">
+        <span>eMaktab tizimiga kirish</span>
+        <span>&#8599;</span>
+      </a>
+      <div class="mobile-menu-contact">
+        <span>📞 +998 (70) 214-17-07</span>
+        <span>📍 Bekobod sh., 12-mavze</span>
+      </div>
+    `;
+    navMenu.appendChild(mobileFooter);
+  }
+
+  const openMobileMenu = () => {
+    if (!mobileBurger || !navMenu) return;
+    navMenu.classList.add('open');
+    mobileBurger.classList.add('open');
+    mobileBurger.setAttribute('aria-expanded', 'true');
+    navBackdrop.classList.add('active');
+    document.body.classList.add('nav-open');
+  };
+
+  const closeMobileMenu = () => {
+    if (!mobileBurger || !navMenu) return;
+    navMenu.classList.remove('open');
+    mobileBurger.classList.remove('open');
+    mobileBurger.setAttribute('aria-expanded', 'false');
+    navBackdrop.classList.remove('active');
+    document.body.classList.remove('nav-open');
+
+    // Close any open dropdowns inside mobile menu
+    document.querySelectorAll('.nav-item.dropdown').forEach(item => {
+      item.classList.remove('open');
+      const dd = item.querySelector('.nav-dropdown');
+      if (dd) dd.classList.remove('show');
+    });
+  };
+
   if (mobileBurger && navMenu) {
-    mobileBurger.addEventListener('click', () => {
-      const isOpen = navMenu.classList.toggle('open');
-      mobileBurger.classList.toggle('open');
-      mobileBurger.setAttribute('aria-expanded', isOpen);
+    mobileBurger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (navMenu.classList.contains('open')) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
     });
 
-    // Close on mobile link click
+    // Close when tapping backdrop
+    navBackdrop.addEventListener('click', closeMobileMenu);
+
+    // Close on mobile navigation link click
     navMenu.querySelectorAll('a:not(.has-dropdown)').forEach(link => {
       link.addEventListener('click', () => {
-        navMenu.classList.remove('open');
-        mobileBurger.classList.remove('open');
+        closeMobileMenu();
       });
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navMenu.classList.contains('open')) {
+        closeMobileMenu();
+      }
+    });
+
+    // Reset if window resized to desktop
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 860 && navMenu.classList.contains('open')) {
+        closeMobileMenu();
+      }
     });
   }
 
-  // 3. Dropdowns for mobile / touch
+  // 3. Dropdowns for mobile / touch (Accordion behavior)
   const navItemsWithDropdown = document.querySelectorAll('.nav-item.dropdown');
   navItemsWithDropdown.forEach(item => {
     const trigger = item.querySelector('.nav-link');
@@ -44,7 +113,27 @@ document.addEventListener('DOMContentLoaded', () => {
       trigger.addEventListener('click', (e) => {
         if (window.innerWidth <= 860) {
           e.preventDefault();
-          dropdown.classList.toggle('show');
+          e.stopPropagation();
+
+          const isCurrentlyOpen = item.classList.contains('open');
+
+          // Accordion: close other dropdowns first
+          navItemsWithDropdown.forEach(otherItem => {
+            if (otherItem !== item) {
+              otherItem.classList.remove('open');
+              const otherDd = otherItem.querySelector('.nav-dropdown');
+              if (otherDd) otherDd.classList.remove('show');
+            }
+          });
+
+          // Toggle current dropdown
+          if (isCurrentlyOpen) {
+            item.classList.remove('open');
+            dropdown.classList.remove('show');
+          } else {
+            item.classList.add('open');
+            dropdown.classList.add('show');
+          }
         }
       });
     }
