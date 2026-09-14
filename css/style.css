@@ -525,6 +525,7 @@ ul, ol {
 .btn-gov-primary:hover {
   background-color: var(--color-gov-blue-dark);
   box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
 }
 
 .btn-gov-secondary {
@@ -544,6 +545,7 @@ ul, ol {
 .btn-gov-secondary:hover {
   background-color: var(--color-gov-blue-subtle);
   border-color: var(--color-gov-blue);
+  transform: translateY(-2px);
 }
 
 /* Hero Key Quick Stats */
@@ -623,7 +625,8 @@ ul, ol {
 
 .stat-card:hover {
   border-top-color: var(--color-gov-green);
-  transform: translateY(-2px);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
 }
 
 .stat-number {
@@ -748,6 +751,7 @@ ul, ol {
 }
 
 .leader-card:hover {
+  transform: translateY(-4px);
   box-shadow: var(--shadow-hover);
   border-color: var(--color-gov-blue-light);
 }
@@ -852,9 +856,9 @@ ul, ol {
 }
 
 .student-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
   border-color: var(--color-gov-green);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-hover);
 }
 
 .student-photo-wrapper {
@@ -1002,8 +1006,9 @@ ul, ol {
 }
 
 .gallery-card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-4px);
   box-shadow: var(--shadow-hover);
+  border-color: rgba(10, 37, 64, 0.2);
 }
 
 .gallery-img-wrapper {
@@ -1409,4 +1414,28 @@ ul, ol {
   background-color: var(--color-gov-blue);
   color: #ffffff;
   border-color: var(--color-gov-blue);
+}
+
+/* --------------------------------------------------------------------------
+   14. MINIMALIST SCROLL REVEAL & MICRO-ANIMATIONS
+   -------------------------------------------------------------------------- */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 }

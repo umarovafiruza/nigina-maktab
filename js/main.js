@@ -249,4 +249,56 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // 8. Minimalist Scroll Reveal Animation
+  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealTargets = document.querySelectorAll(`
+      .section-header,
+      .stat-card,
+      .leader-card,
+      .student-card,
+      .gallery-card,
+      .gallery-card-item,
+      .about-overview-grid,
+      .contact-info-card,
+      .contact-form-card,
+      .doc-item
+    `);
+
+    // Add initial reveal class and stagger delays for grid items
+    const grids = document.querySelectorAll('.leadership-grid, .students-grid, .stats-grid, .gallery-grid, .doc-list');
+    grids.forEach(grid => {
+      const children = grid.children;
+      Array.from(children).forEach((child, idx) => {
+        child.classList.add('reveal-on-scroll');
+        const delay = Math.min((idx % 4) * 60, 240);
+        if (delay > 0) {
+          child.style.transitionDelay = `${delay}ms`;
+        }
+      });
+    });
+
+    revealTargets.forEach(el => {
+      if (!el.classList.contains('reveal-on-scroll')) {
+        el.classList.add('reveal-on-scroll');
+      }
+    });
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      threshold: 0.1,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+      revealObserver.observe(el);
+    });
+  }
 });
